@@ -1,18 +1,36 @@
 import React, { useState } from "react";
-import ToggleButton from "./components/ToggleButton";
+import MainSection from "./components/MainSection";
+import Navbar from "./components/Navbar";
 import "./App.css";
+import "./index.css";
 
 const App = () => {
-  const [isNightMode, setNightMode] = useState(false);
+  const links = [
+    {
+      href: "/",
+      text: "Home",
+      id: 0,
+    },
+    {
+      href: "/contacts",
+      text: "Contacts",
+      id: 1,
+    },
+    {
+      href: "/about",
+      text: "About Us",
+      id: 2,
+    },
+  ];
 
-  const toggleNightMode = () => {
-    setNightMode(!isNightMode);
+  const [mode, setMode] = useState("light");
+  const changeMode = () => {
+    setMode(mode === "light" ? "dark" : "light");
   };
-
   return (
-    <div className={`app ${isNightMode ? "night-mode" : "day-mode"}`}>
-      <h1>{isNightMode ? "Modalità Notte" : "Modalità Giorno"}</h1>
-      <ToggleButton onClick={toggleNightMode} />
+    <div className={mode}>
+      <Navbar links={links} changeMode={changeMode} />
+      <MainSection />
     </div>
   );
 };
