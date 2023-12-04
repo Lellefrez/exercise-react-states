@@ -3,6 +3,7 @@ import MainSection from "./components/MainSection";
 import Navbar from "./components/Navbar";
 import "./App.css";
 import "./index.css";
+import Footer from "./components/Footer";
 
 const App = () => {
   const links = [
@@ -27,10 +28,12 @@ const App = () => {
   const changeMode = () => {
     setMode(mode === "light" ? "dark" : "light");
   };
+
   return (
     <div className={mode}>
       <Navbar links={links} changeMode={changeMode} />
       <MainSection />
+      <Footer />
     </div>
   );
 };
