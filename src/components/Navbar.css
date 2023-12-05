@@ -19,6 +19,10 @@ a {
   text-decoration: none;
   color: brown;
 }
+a:hover {
+  text-decoration: underline;
+  color: red;
+}
 nav {
   border-bottom: 1px solid red;
 }

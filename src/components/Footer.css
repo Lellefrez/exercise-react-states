@@ -1,0 +1,42 @@
+h1 {
+  font-size: 1.2rem;
+}
+p {
+  font-size: 1rem;
+}
+h3 {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.log-in {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 8rem 0 8rem;
+}
+.log-in ul {
+  list-style: none;
+  padding: 1rem;
+}
+
+.registrazione button {
+  padding: 0.5rem;
+  border-bottom: 10%;
+  border-left: none;
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
+  background-color: white;
+  cursor: pointer;
+}
+.registrazione input {
+  padding: 0.5rem;
+  border-right: none;
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
+}
+
+.registrazione select {
+  padding: 0.5rem;
+  border-right: none;
+  border-radius: 10px;
+}

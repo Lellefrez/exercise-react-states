@@ -14,6 +14,9 @@ p {
 img {
   max-width: 100%;
 }
+main {
+  border-bottom: 1px solid red;
+}
 
 main div {
   display: flex;
@@ -24,6 +27,13 @@ main div {
 }
 main div img {
   padding: 1rem;
+  border-radius: 10%;
+  opacity: 50%;
+}
+main div img:hover {
+  cursor: pointer;
+  opacity: 100%;
+  transition: 2s;
 }
 .btn-volume {
   padding: 0.5rem 1rem;
